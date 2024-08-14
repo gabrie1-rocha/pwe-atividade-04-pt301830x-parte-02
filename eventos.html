@@ -1,4 +1,5 @@
 <html>
+  <link rel="stylesheet" href="home.css"> 
   <header id="cabecalho"> 
     <nav>
       <object width="100%" height="65px" data="menu.html"></object>
@@ -7,40 +8,40 @@
   <img src="Imagens/Logo.jpg" alt=" " />
 <h1>Inscreva-se</h1>
 
-  <form name="evento">
+  <form id="event" name="evento">
     <fieldset>
       Evento
-      <select name="evento" required>
-        <option value="">-- Selecione --</option>
-        <option value="voe">Voe sem asas</option>
-        <option value="festa">Festa junina</option>
-        <option value="semana">Semana de tecnologia</option>
+      <select name="evento" required class="rounded-form3">
+        <option value="" class="rounded-form">-- Selecione --</option>
+        <option value="voe" class="rounded-form">Voe sem asas</option>
+        <option value="festa" class="rounded-form">Festa junina</option>
+        <option value="semana" class="rounded-form">Semana de tecnologia</option>
       </select>
     </fieldset>
 
     <fieldset name="Informações de Acesso">
       <legend>Informações de Acesso</legend>
       <div>
-        Usuário <input type="text" placeholder="Usuario" required>
+        Usuário<br><br><input type="text" placeholder="Usuario" required class="rounded-form">
       </div>
       <div>
-        Senha <input type="password" placeholder="Senha" required>
+        Senha <input type="password" placeholder="Senha" required class="rounded-form">
       </div>
       <div>
-        Confirme a senha <input type="text" placeholder="Confirma a senha" required>
+        Confirme a senha <input type="text" placeholder="Confirma a senha" required class="rounded-form">
       </div>
     </fieldset>
 
     <fieldset name="Informações Pessoais">
       <legend>Informações Pessoais</legend>
       <div>
-        Nome Completo <input type="text" placeholder="Nome completo" required>
+        Nome Completo <input type="text" placeholder="Nome completo" required class="rounded-form">
       </div>
       <div>
-        E-mail <input type="email" placeholder="Email" required>
+        E-mail <input type="email" placeholder="Email" required class="rounded-form">
       </div>
       <div>
-        Celular <input type="tel" placeholder="(00) 00000-0000" required> (99) 99999-9999
+        Celular <input type="tel" placeholder="(00) 00000-0000" required class="rounded-form"> (99) 99999-9999 
       </div>
 
       <fieldset>
@@ -54,14 +55,14 @@
       </fieldset>
 
       <div>
-        Data de Nascimento <input type="date" required>
+        Data de Nascimento <br><br><input type="date" required><br><br>
       </div>
 
       <div>
-        Cor favorita <input type="color" required>
+        Cor favorita <br><br><input type="color" required><br><br>
       </div>
 
-      Perfil no Github <input type="url" placeholder="https://github.com/usuario" required>
+      Perfil no Github <br><br><input type="url" placeholder="https://github.com/usuario" required class="rounded-form"><br><br>
     </fieldset>
 
     <button type="submit" form="evento">Inscrever</button>

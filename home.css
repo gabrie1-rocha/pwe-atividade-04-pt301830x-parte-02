@@ -1,20 +1,24 @@
-* {
-  margin: 8px 4px;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-main,
-section {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
 #astronauta {
+  width: 50%;
+  height: auto;
   border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rounded-form {
+  border-radius: 10px; 
+  border: 2px solid #ccc; 
+  padding: 20px; 
+}
+
+.rounded-form3 {
+  border-radius: 10px; 
+  border: 2px solid #867e7e; 
+  padding: 20px;
+  background-color: solid #3e3f42;;
+}
+
+.rounded-form2 {
+
 }
