@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Contato - IFSP - Pirituba</title>
-<script src="home.css"></script>
+<link rel="stylesheet" href="home.css"> 
 </head>
 <body>
 
@@ -14,31 +14,48 @@
   </header>
   <img src="Imagens/Logo.jpg" alt=" " />
   <h1>Mande uma Mensagem</h1>
-  <form name='contato' method="POST">
-  Nome <input type="text" placeholder="Nome" required><br>
-  E-mail <input type="email" placeholder="Email" required><br>
-  Telefone <input type="tel" placeholder="(00) 00000-0000" required> (99) 99999-9999<br>
-    <form name="evento">
-        Evento
-        <select name="evento" required>
-        <option value="">-- Selecione --</option>
-        <option value="ra">Reclamação</option>
-        <option value="sa">Sugestão</option>
-      </select>
-      <br><textarea></textarea>
-    </form>
-    <form>
-      Mensagem<br>
-    <fieldset name="opções de resposta">
-      <legend>Opções de Resposta</legend>
-      <form>
-        E-mail <input id="email" type="checkbox" name="op1" value="op2">
-        Telefone <input id="telefone" type="checkbox" name="op1" value="op1">
-      </form>
-    </fieldset>
-    </form>
-    <button type="submit" form="contato">Enviar</button>
-  </form>
+  <ul> 
+    <li>
+        <form name='contato' method="POST">
+            Nome <br><input type="text" placeholder="Nome" required class="rounded-form"><br>
+        </form>
+    </li>
+    <li>
+        <form name='contato' method="POST">
+            E-mail<br><input type="email" placeholder="Email" required class="rounded-form"><br>
+        </form>
+    </li>
+    <li>
+        <form name='contato' method="POST">
+            Telefone (99) 99999-9999 <input type="tel" placeholder="(00) 00000-0000" required class="rounded-form"><br>
+        </form>
+    </li>
+    <li>
+        <form name='contato' method="POST">
+            Assunto<br>
+            <select name="evento" required class="rounded-form3">
+                <option value="">-- Selecione --</option>
+                <option value="ra">Reclamação</option>
+                <option value="sa">Sugestão</option>
+            </select>
+        </form>
+    </li>
+    <li>
+        <form name="contato">
+            <br>Mensagem<br><textarea></textarea>
+        </form>
+    </li>
+    <li>
+        <fieldset name="opções de resposta">
+            <legend>Opções de Resposta</legend>
+            <form name="contato">
+                E-mail <input id="email" type="checkbox" name="op1" value="op2">
+                Telefone <input id="telefone" type="checkbox" name="op1" value="op1">
+            </form>
+        </fieldset>
+    </li>
+  </ul>
+  <br><button type="submit" form="contato" class="rounded-form2"">Enviar</button>
 </body>
 <footer>
     <br><br>

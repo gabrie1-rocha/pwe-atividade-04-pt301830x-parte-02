@@ -10,7 +10,7 @@
 
   <form id="event" name="evento">
     <fieldset>
-      Evento
+      Evento<br>
       <select name="evento" required class="rounded-form3">
         <option value="" class="rounded-form">-- Selecione --</option>
         <option value="voe" class="rounded-form">Voe sem asas</option>
@@ -22,26 +22,26 @@
     <fieldset name="Informações de Acesso">
       <legend>Informações de Acesso</legend>
       <div>
-        Usuário<br><br><input type="text" placeholder="Usuario" required class="rounded-form">
+        <br>Usuário<br><br><input type="text" placeholder="Usuario" required class="rounded-form"><br><br>
       </div>
       <div>
         Senha <input type="password" placeholder="Senha" required class="rounded-form">
-      </div>
+      </div> <br>
       <div>
-        Confirme a senha <input type="text" placeholder="Confirma a senha" required class="rounded-form">
+        Confirme a senha <input type="text" placeholder="Confirma a senha" required class="rounded-form"> <br>
       </div>
     </fieldset>
 
     <fieldset name="Informações Pessoais">
       <legend>Informações Pessoais</legend>
       <div>
-        Nome Completo <input type="text" placeholder="Nome completo" required class="rounded-form">
+        <br>Nome Completo <br><input type="text" placeholder="Nome completo" required class="rounded-form"><br><br>
       </div>
       <div>
-        E-mail <input type="email" placeholder="Email" required class="rounded-form">
+        E-mail <br><input type="email" placeholder="Email" required class="rounded-form"><br><br>
       </div>
       <div>
-        Celular <input type="tel" placeholder="(00) 00000-0000" required class="rounded-form"> (99) 99999-9999 
+        Celular (99) 99999-9999<br><input type="tel" placeholder="(00) 00000-0000" required class="rounded-form"><br><br>
       </div>
 
       <fieldset>
@@ -52,21 +52,21 @@
           <label for="masc">Feminino</label>
           <input type="radio" name="sexo" value="Feminino" id="Feminino">
         </div>
-      </fieldset>
+      </fieldset><br>
 
       <div>
-        Data de Nascimento <br><br><input type="date" required><br><br>
+        Data de Nascimento <input type="date" required><br><br>
       </div>
 
       <div>
-        Cor favorita <br><br><input type="color" required><br><br>
+        Cor favorita <input type="color" required><br><br>
       </div>
 
       Perfil no Github <br><br><input type="url" placeholder="https://github.com/usuario" required class="rounded-form"><br><br>
     </fieldset>
 
-    <button type="submit" form="evento">Inscrever</button>
-    <input type="reset" value="Limpar" />
+    <br><br><button type="submit" form="evento" class="rounded-form2">Inscrever</button><br><br>
+    <input type="reset" value="Limpar" class="rounded-form2" /><br><br>
   </form>
 </body>
 <footer>
